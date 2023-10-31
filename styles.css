@@ -1,0 +1,144 @@
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  /* background-color: #efefef; */
+  background-color: #201f20;
+  margin: 0;
+  color: white;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav img {
+  width: 2rem;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+nav img:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+h2 {
+  font-size: 1.2rem;
+  color: rgb(179, 179, 179);
+}
+
+.text {
+  font-size: 1.1rem;
+  margin: 5px;
+  color: rgb(179, 179, 179);
+}
+
+#button {
+  background-color: white;
+  border: 0;
+  margin: 15px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  transition: 1s;
+  text-decoration: none;
+  color: black;
+}
+
+#button:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+  /* background-color: rgb(95, 95, 95); */
+}
+
+/* grid */
+#container {
+  display: grid;
+  grid-template-columns: 100px 800px;
+  grid-template-rows: repeat(auto, 4);
+}
+
+div img {
+  width: 50rem;
+  height: 31.25rem;
+  transform: scale(0.8);
+  border: 10px solid grey;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+div img:hover {
+  transform: scale(0.84);
+}
+
+.Perfume {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.Result {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  height: 200px;
+  text-align: center;
+}
+
+#foot img {
+  width: 2rem;
+  padding: 50px 30px;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+  .profile {
+    margin-top: 8rem;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div img {
+    width: 30rem;
+    height: 20rem;
+  }
+  .bio {
+    width: 18.75rem;
+  }
+  footer {
+    width: 100%;
+  }
+}
